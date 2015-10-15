@@ -20,7 +20,7 @@ None
 
 ## Recommended
 
-* `ansible-r` ([see](https://github.com/Oefenweb/ansible-r)
+* `ansible-r` ([see](https://github.com/Oefenweb/ansible-r))
 
 #### Example
 
