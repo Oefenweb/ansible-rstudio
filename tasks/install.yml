@@ -6,7 +6,7 @@
     state: latest
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  with_items: rstudio_dependencies
+  with_items: "{{ rstudio_dependencies }}"
   tags:
     - rstudio-install-dependencies
 
@@ -14,7 +14,7 @@
   apt:
     name: "{{ item }}"
     state: latest
-  with_items: rstudio_install
+  with_items: "{{ rstudio_install }}"
   tags:
     - rstudio-install-additional
 
@@ -30,7 +30,9 @@
     - rstudio-install-download-directory
 
 - name: install | download deb
-  command: "curl -sS https://download1.rstudio.org/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb -o {{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+  command: >
+    curl -sS https://download1.rstudio.org/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb
+      -o {{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb
   args:
     creates: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
   tags:
