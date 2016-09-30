@@ -45,6 +45,11 @@ branches:
   only:
     - master
 
+matrix:
+  allow_failures:
+    # See https://github.com/ansible/ansible-modules-core/issues/3752
+    - env: ANSIBLE_VERSION=2.1.0.0
+
 before_install:
   - sudo apt-get update -qq
 
