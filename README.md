@@ -1,6 +1,6 @@
 ## rstudio
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-rstudio.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-rstudio) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-rstudio-blue.svg)](https://galaxy.ansible.com/list#/roles/4954)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-rstudio.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-rstudio) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-rstudio-blue.svg)](https://galaxy.ansible.com/tersmitten/rstudio/)
 
 Set up (the latest version of) [RStudio (IDE)](https://www.rstudio.com/products/rstudio/download/) in Debian-like systems.
 
@@ -11,7 +11,7 @@ Set up (the latest version of) [RStudio (IDE)](https://www.rstudio.com/products/
 
 #### Variables
 
-* `rstudio_version` [default: `1.0.153`]: Version to install
+* `rstudio_version` [default: `1.1.383`]: Version to install
 * `rstudio_install` [default: `[]`]: Additional packages to install (e.g. `r-base`)
 
 ## Dependencies

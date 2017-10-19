@@ -1,4 +1,4 @@
 # defaults file for rstudio
 ---
-rstudio_version: 1.0.153
+rstudio_version: 1.1.383
 rstudio_install: []
