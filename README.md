@@ -1,6 +1,6 @@
 ## rstudio
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-rstudio.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-rstudio) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-rstudio-blue.svg)](https://galaxy.ansible.com/Oefenweb/rstudio/)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-rstudio.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-rstudio) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-rstudio-blue.svg)](https://galaxy.ansible.com/Oefenweb/rstudio_server/)
 
 Set up (the latest version of) [RStudio (IDE)](https://www.rstudio.com/products/rstudio/download/) in Debian-like systems.
 
