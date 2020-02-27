@@ -29,8 +29,8 @@
 
 - name: install | download deb
   command: >
-    curl -sSL
-    https://download1.rstudio.org/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb
+    curl --silent --show-error --fail --location
+    {{ rstudio_download_url }}
     -o {{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb
   args:
     creates: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
