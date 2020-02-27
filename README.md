@@ -7,6 +7,7 @@ Set up (the latest version of) [RStudio (IDE)](https://www.rstudio.com/products/
 
 #### Requirements
 
+* `curl` (will be installed)
 * `r-base` (will not be installed)
 
 #### Variables

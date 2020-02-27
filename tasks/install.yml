@@ -28,9 +28,13 @@
     - rstudio-install-download-directory
 
 - name: install | download deb
-  get_url:
-    url: "{{ rstudio_download_url }}"
-    dest: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+  command: >
+    curl --silent --show-error --fail --location
+    {{ rstudio_download_url }}
+    -o {{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb
+  args:
+    creates: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+    warn: false
   tags:
     - rstudio-install-download
     - rstudio-install-download-deb
