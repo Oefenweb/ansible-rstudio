@@ -7,12 +7,12 @@
     - "_{{ ansible_distribution | lower }}.yml"
     - _default.yml
   tags:
-   - configuration
-   - rstudio
-   - rstudio-include-variables
+    - configuration
+    - rstudio
+    - rstudio-include-variables
 
 - include: install.yml
   tags:
-   - configuration
-   - rstudio
-   - rstudio-install
+    - configuration
+    - rstudio
+    - rstudio-install
