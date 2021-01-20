@@ -12,7 +12,7 @@ Set up (the latest version of) [RStudio (IDE)](https://www.rstudio.com/products/
 
 #### Variables
 
-* `rstudio_version` [default: `1.2.5033`]: Version to install
+* `rstudio_version` [default: `1.4.1103`]: Version to install
 * `rstudio_install` [default: `[]`]: Additional packages to install (e.g. `r-base`)
 
 ## Dependencies
