@@ -1,6 +1,7 @@
-# meta file for rstudio
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: rstudio
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
