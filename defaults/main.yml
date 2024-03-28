@@ -1,5 +1,5 @@
 # defaults file
 ---
 rstudio_version: '2023.03.1-446'
-rstudio_download_url: "{{ _rstudio_download_url }}"
+rstudio_download_url: "{{ rstudio_preset_download_url }}"
 rstudio_install: []
