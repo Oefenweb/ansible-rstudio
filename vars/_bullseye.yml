@@ -1,3 +1,3 @@
 # vars file
 ---
-rstudio_preset_download_url: "https://download1.rstudio.org/electron/focal/{{ rstudio_machine_map[ansible_machine] }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+rstudio_preset_download_url: "https://download1.rstudio.org/electron/bionic/{{ rstudio_machine_map[ansible_machine] }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
