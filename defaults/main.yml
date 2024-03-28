@@ -1,5 +1,5 @@
 # defaults file
 ---
 rstudio_version: '2023.03.1-446'
-rstudio_download_url: "https://download1.rstudio.org/electron/bionic/{{ rstudio_machine_map[ansible_machine] }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+rstudio_download_url: "{{ _rstudio_download_url }}"
 rstudio_install: []
