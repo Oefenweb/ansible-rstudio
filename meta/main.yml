@@ -13,10 +13,12 @@ galaxy_info:
       versions:
         - bionic
         - focal
+        - jammy
     - name: Debian
       versions:
-        - stretch
         - buster
+        - bullseye
+        - bookworm
   galaxy_tags:
     - development
     - system
