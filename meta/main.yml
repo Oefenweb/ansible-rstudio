@@ -1,9 +1,8 @@
 # meta file
 ---
 galaxy_info:
-  namespace: oefenweb
+  author: oefenweb
   role_name: rstudio
-  author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up (the latest version of) RStudio (IDE) in Debian-like systems
   license: MIT
@@ -13,6 +12,7 @@ galaxy_info:
       versions:
         - focal
         - jammy
+        - noble
     - name: Debian
       versions:
         - bullseye
