@@ -31,16 +31,16 @@
   ansible.builtin.command: >
     curl --silent --show-error --fail --location
     {{ rstudio_download_url }}
-    -o {{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb
+    -o {{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_facts['machine']] }}.deb
   args:
-    creates: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+    creates: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_facts['machine']] }}.deb"
   tags:
     - rstudio-install-download
     - rstudio-install-download-deb
 
 - name: install | install deb
   ansible.builtin.apt:
-    deb: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_machine] }}.deb"
+    deb: "{{ rstudio_downloads_path }}/rstudio-{{ rstudio_version }}-{{ rstudio_machine_map[ansible_facts['machine']] }}.deb"
   tags:
     - rstudio-install-install
     - rstudio-install-install-deb
